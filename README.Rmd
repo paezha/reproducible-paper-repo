@@ -11,14 +11,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# plan4lez-vulnerability
+# reproducible-paper-repo
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 ## About this repo
 
-This repository is to make Raul's project reproducible.
+This is a template repository with a folder structure that works well for reproducible papers.
 
 This readme file when knitted will become the landing page of the GitHub repository.
 
@@ -40,15 +40,3 @@ plot(pressure)
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
 
 The folder structure and the contents of the folders are suggestions and/or examples. Keep or delete as you wish.
-
-## Instructions to use reproducible environments
-
-This repository uses a reproducible environment powered by [{renv}](https://rstudio.github.io/renv/articles/renv.html). Reproducible environments keep a record of the software and versions used in an R project. This allows the project to isolate its package library and reduces the risk that the project will malfunction due to bad package dependencies.
-
-To use a reproducible environment, you need to check that you are working with the designated version of R. 
-
-After you clone the repository, you will see a message from [{renv}](https://rstudio.github.io/renv/articles/renv.html) if your version of R is not the same as registered in the lockfile of the project. If that is the case, install the version that appears in the lock file, and make sure that it is the version used when you launch your RStudio application. You can select different versions of R by going to `Tools > Global Options > General`.
-
-Then, you can use `renv::restore()` to restore the project library.
-
-Check the documentation of the package for more information about reproducible environments.
